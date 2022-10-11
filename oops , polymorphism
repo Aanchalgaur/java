@@ -28,3 +28,29 @@ public class Main
 
 output:
 meows
+
+public class Main
+{
+	public static void main(String[] args) {
+		dog d= new dog();
+		cat c= new cat();
+		c.sound();
+		d.sound();
+	}
+	public static class animal{
+	    void sound(){
+	        System.out.println("animal sound");
+	    }
+	}
+	public static class cat extends animal{
+	    void sound(){
+	        System.out.println("meows");
+	    }
+	}
+	public static class dog extends animal{
+	    void sound(){
+	        System.out.println("bark");
+	    }
+	}
+}
+
